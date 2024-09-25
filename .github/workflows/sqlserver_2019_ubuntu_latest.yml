@@ -1,4 +1,4 @@
-name: sqlserver_2022_ubuntu_latest
+name: sqlserver_2019_ubuntu_latest
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     runs-on: [ubuntu-latest]
     services:
       mssql:
-        image: mcr.microsoft.com/mssql/server:2022-latest
+        image: mcr.microsoft.com/mssql/server:2019-latest
         ports:
           - 1433:1433
         env:
