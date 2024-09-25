@@ -13,7 +13,7 @@ jobs:
       MSSQL_SA_PASSWORD: YourPasswordHereOrFromSecrets123
       USERNAME: sa
       HOST: localhost
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     services:
       mssql:
         image: mcr.microsoft.com/mssql/server:2022-latest
