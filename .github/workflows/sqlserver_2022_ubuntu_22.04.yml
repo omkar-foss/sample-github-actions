@@ -26,7 +26,7 @@ jobs:
           USERNAME: ${{ env.USERNAME }}
           HOST: ${{ env.HOST }}
         options: >-
-          --health-cmd="/opt/mssql-tools18/bin/sqlcmd -S ${HOST} -U ${USERNAME} -P ${MSSQL_SA_PASSWORD} -N -C -l 30 -Q 'SELECT 1' || exit 1"
+          --health-cmd="/opt/mssql-tools18/bin/sqlcmd -S ${HOST} -U ${USERNAME} -P ${MSSQL_SA_PASSWORD} -l 30 -Q 'SELECT 1' || exit 1"
           --health-start-period 10s
           --health-interval 10s
           --health-timeout 5s
